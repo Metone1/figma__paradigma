@@ -1,0 +1,84 @@
+$breakpoint992: 992px;
+$breakpoint800: 800px;
+$breakpoint600: 600px;
+
+
+@import "_header";
+@import "_main-header";
+@import "_aside";
+@import "_main";
+@import "_burger";
+@import "_popup";
+
+*,
+*::before,
+*::after {
+   padding: 0;
+   margin: 0;
+   bottom: 0;
+   box-sizing: border-box;
+}
+
+a {
+   text-decoration: none;
+}
+
+ul,
+ol,
+li {
+   list-style: none;
+}
+
+img {
+   vertical-align: top;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+   font-weight: inherit;
+   font-size: inherit;
+}
+
+html,
+body {
+   height: 100%;
+   line-height: 1;
+   font-size: 14px;
+   font-weight: 500;
+   color: #1C1C1C;
+   font-family: 'Montserrat', sans-serif;
+}
+
+body.lock {
+   overflow: hidden;
+}
+
+.wrapper {
+   min-height: 100%;
+   overflow: hidden;
+   position: relative;
+}
+
+._container {
+   width: 81.771vw;
+   margin: 0 auto;
+   position: relative;
+   z-index: 10;
+   min-width: 286px;
+}
+
+._ibg img {
+   position: absolute;
+   width: 100%;
+   min-height: 56.25vw;
+   height: 100%;
+   left: 0;
+   top: 0;
+   object-fit: cover;
+   z-index: 0;
+   opacity: 0.9;
+}

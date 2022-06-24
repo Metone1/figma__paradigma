@@ -1,0 +1,257 @@
+.main-header {}
+
+.main-header__container {
+   display: flex;
+   height: 7.708vw;
+   align-items: center;
+   justify-content: space-between;
+
+   @media (max-width: $breakpoint992) {
+      height: 64px;
+   }
+}
+
+.main-header__text {
+   width: 10.938vw;
+   font-weight: 400;
+   font-size: 0.625vw;
+   line-height: 1.67;
+   text-align: center;
+   margin-right: 5.208vw;
+   display: flex;
+   flex-direction: column;
+   gap: 0.521vw;
+
+   @media (max-width: $breakpoint992) {
+      display: none;
+   }
+}
+
+.main-header__price {
+   align-items: center;
+   display: flex;
+   width: 11.458vw;
+   margin-right: 5.781vw;
+
+   & .price__icon {
+      width: 2.292vw;
+      height: 2.292vw;
+      background-color: #ffffff;
+      box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.05);
+      border-radius: 50%;
+      text-align: center;
+      align-items: center;
+      font-weight: 600;
+      font-size: 0.573vw;
+      letter-spacing: 0.04em;
+      color: #12C868;
+      flex: 0 0 auto;
+      margin-right: 0.885vw;
+
+      & p {
+         line-height: 2.292vw;
+      }
+   }
+
+   & a {
+      font-weight: 600;
+      font-size: 0.625vw;
+      line-height: 1.25;
+      text-align: center;
+      letter-spacing: 0.04em;
+      color: #1C1C1C;
+      border-bottom: 0.114vw dotted #12C868;
+   }
+
+   @media (max-width: $breakpoint992) {
+      display: none;
+   }
+}
+
+.main-header__logo {
+   width: 19.479vw;
+   height: 12.917vw;
+   margin-right: 1.25vw;
+   position: relative;
+
+   & img {
+      width: 100%;
+      height: 100%;
+      position: relative;
+      top: 1.354vw;
+      left: -2.604vw;
+   }
+
+   @media (max-width: $breakpoint992) {
+      min-width: 102px;
+      width: 102px;
+      height: 96px;
+      top: 11px;
+      margin-right: 0;
+
+
+      & img {
+         width: 100%;
+         height: 100%;
+         position: relative;
+         top: -16px;
+         left: -16px;
+      }
+   }
+}
+
+.main-header__social {
+   display: flex;
+   flex-direction: column;
+   width: 8.333vw;
+   height: 3.802vw;
+   margin-right: 6.354vw;
+
+   @media (max-width: $breakpoint992) {
+      display: none;
+   }
+}
+
+.social__text {
+   font-weight: 400;
+   font-size: 0.625vw;
+   line-height: 1.2;
+   letter-spacing: 0.02em;
+   padding-bottom: 0.865vw;
+   display: flex;
+   align-items: center;
+   gap: 0.208vw;
+   justify-content: center;
+
+   & span {
+      width: 0.208vw;
+      height: 0.208vw;
+      background: #12C868;
+      border-radius: 50%;
+   }
+}
+
+.social__links {
+   width: 8.333vw;
+   height: 2.292vw;
+   display: flex;
+
+   & img {
+      width: 100%;
+      height: 100%;
+   }
+}
+
+.social__link {
+   width: 100%;
+   height: 100%;
+   top: 0;
+   position: relative;
+   transition: 0.5s;
+
+   &:hover {
+      top: 0.208vw;
+   }
+
+}
+
+.main-header__contacts {
+   width: 12.656vw;
+   height: 3.958vw;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+
+   @media (max-width: $breakpoint992) {
+      min-width: 138px;
+      height: 52px;
+      position: relative;
+      left: -11px;
+      top: 4px;
+   }
+
+}
+
+.contacts {}
+
+.contacts__time {
+   padding-bottom: 0.313vw;
+   display: flex;
+   align-items: center;
+   gap: 0.208vw;
+
+   @media (max-width: $breakpoint992) {
+      gap: 2.5px;
+      padding-bottom: 4px;
+
+   }
+
+   & span {
+      width: 0.208vw;
+      height: 0.208vw;
+      background: #FFFFFF;
+      border-radius: 50%;
+      position: relative;
+      top: -1px;
+
+      @media (max-width: $breakpoint992) {
+         width: 5px;
+         height: 5px;
+         background: #20B038;
+      }
+   }
+
+   & p {
+      font-weight: 400;
+      font-size: 0.625vw;
+      line-height: 1.2;
+      letter-spacing: 0.02em;
+      display: inline-block;
+
+      @media (max-width: $breakpoint992) {
+         font-size: 7px;
+         line-height: 1.28;
+      }
+   }
+
+   & b {
+      font-size: 0.625vw;
+      line-height: 1.2;
+      letter-spacing: 0.02em;
+
+      @media (max-width: $breakpoint992) {
+         font-size: 7px;
+         line-height: 1.28;
+      }
+   }
+}
+
+.contacts__tel {
+   font-weight: 600;
+   font-size: 1.146vw;
+   line-height: 1.23;
+   letter-spacing: 0.05em;
+   color: #1C1C1C;
+
+   @media (max-width: $breakpoint992) {
+      font-size: 14px;
+      line-height: 1.2;
+   }
+}
+
+.contacts__link {
+   font-weight: 600;
+   font-size: 0.625vw;
+   line-height: 1.5;
+   letter-spacing: 0.04em;
+   color: #12C868;
+   border-bottom: 0.114vw dotted #12C868;
+   cursor: pointer;
+
+   @media (max-width: $breakpoint992) {
+      margin-top: 4px;
+      font-size: 10px;
+      line-height: 1.2;
+      border-bottom: 2px dotted #12C868;
+   }
+}
