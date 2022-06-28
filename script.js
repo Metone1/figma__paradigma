@@ -4,10 +4,24 @@ const iconMenu = document.querySelector('.menu__icon');
 const Header = document.querySelector('.header');
 const burger = document.querySelectorAll('.burger');
 const headerContainer = document.querySelector('.header__container');
+
+const asideButton = document.querySelector('.aside__btn');
+const aside = document.querySelector('.aside__block');
+const asideText = document.querySelector('.aside__text');
+
+const tel = document.querySelector('.popup__input');
+const popupBtn = document.querySelector('.popup__btn');
+const popupCheckbox = document.querySelector('.checkbox__mask');
+const popupOpen = document.querySelector('.contacts__link');
+const popup = document.querySelector('.popup');
+const popupClose = document.querySelector('.popup__close');
+
+
 if (iconMenu) {
    iconMenu.addEventListener('click', function () {
       document.body.classList.toggle('lock');
       iconMenu.classList.toggle('active');
+
       Header.classList.toggle('active');
       for (let i = 0; i < burger.length; i++) {
          if (iconMenu.classList.contains('active')) {
@@ -25,9 +39,6 @@ if (iconMenu) {
 
 //======================aside=====================
 
-const asideButton = document.querySelector('.aside__btn');
-const aside = document.querySelector('.aside__block');
-const asideText = document.querySelector('.aside__text');
 if (asideButton) {
    asideButton.addEventListener('click', function () {
       asideButton.classList.toggle('active');
@@ -47,17 +58,18 @@ if (asideButton) {
 
 //======================popup===============
 
-const popupOpen = document.querySelector('.contacts__link');
-const popup = document.querySelector('.popup');
-const popusClose = document.querySelector('.popup__close');
 if (popup) {
    popupOpen.addEventListener('click', function () {
-      document.body.classList.toggle('lock');
       popup.classList.add('active');
-   })
-   popusClose.addEventListener('click', function () {
+      Header.classList.toggle('lock');
       document.body.classList.toggle('lock');
+
+   })
+   popupClose.addEventListener('click', function () {
       popup.classList.remove('active');
+      Header.classList.toggle('lock');
+      document.body.classList.toggle('lock');
+
    })
 }
 
@@ -66,10 +78,6 @@ if (popup) {
 $(function () {
    $("#phone").mask("+7(999)999-99-99");
 });
-
-const tel = document.querySelector('.popup__input');
-const popupBtn = document.querySelector('.popup__btn');
-const popupCheckbox = document.querySelector('.checkbox__mask');
 
 popupCheckbox.addEventListener('click', function () {
    popupCheckbox.classList.toggle('active');

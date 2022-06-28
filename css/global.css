@@ -3,6 +3,10 @@
   z-index: 10;
 }
 
+header.lock {
+  overflow: hidden;
+}
+
 .header.scroll {
   transition: all 0.5s ease 0s;
   background-color: rgba(28, 28, 28, 0.876);
@@ -855,15 +859,15 @@
     background-color: #1C1C1C;
   }
   .menu__icon.active span {
-    transform: scale(0) translate(0, -50%);
+    transform: scale(0);
   }
   .menu__icon.active::before {
     top: 50%;
-    transform: rotate(-45deg) translate(0, -50%);
+    transform: rotate(-45deg);
   }
   .menu__icon.active::after {
     top: 50%;
-    transform: rotate(45deg) translate(0, 50%);
+    transform: rotate(45deg);
   }
 
   .header {
